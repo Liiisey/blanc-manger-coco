@@ -28,18 +28,16 @@
         <a class="navbar-brand js-scroll-trigger">Blanc-manger coco</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-
                 <?php if ($_SESSION["isConnected"] == false)
                     {
                         echo '<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php?page=connexion">Se connecter</a></li>';
                         echo '<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php?page=registration">S\'inscrire</a></li>';
                         } else {
-                            echo '<li class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Bonjour '. $_SESSION["userConnected"]["login"] .' !</li>';
+                            echo '<li class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" style="color: greenyellow;">Bonjour '. $_SESSION["userConnected"]["login"] .' !</li>';
                             echo '<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php?deconnexion">Se déconnecter</a></li>';
                             echo '<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php?page=game">Lancer une partie</a></li>';
                     }
-                ?>
-
+?>
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php?page=rules">Les règles</a></li>
             </ul>
         </div>

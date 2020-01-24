@@ -3,16 +3,11 @@
     <div class="row justify-content-center">
         <div class="col-6">
             <section class="page-section-heading mt-5">
-                    <?php
-                    $form = false;
-                    if ($form && $resultat) echo"Connexion réussie !";
-                    if ($form && !$resultat) echo"La connexion a échouée, veuillez réessayer plus tard.";
-                    ?>
-                    
-
                 <br>
+
                 <h1>Se connecter</h1>
                 <br>
+
                 <form action="form/connexion.php" class="index-form" method="post">
                     <div class="form-group row">
                         <label class="col-sm-4 col-form-label" for="login">Pseudo</label>
